@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 14, 2020 at 06:10 PM
+-- Generation Time: Feb 19, 2020 at 03:00 AM
 -- Server version: 5.7.26
 -- PHP Version: 7.2.18
 
@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS `lecturer` (
   `date` timestamp NOT NULL,
   `status` varchar(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `lecturer`
@@ -71,7 +71,8 @@ CREATE TABLE IF NOT EXISTS `lecturer` (
 
 INSERT INTO `lecturer` (`id`, `firstname`, `lastname`, `role`, `photo`, `path`, `date`, `status`) VALUES
 (1, 'kola', 'jide', 'lecturer', 'two.PNG', '/file/two.PNG', '2020-02-14 16:07:47', '0'),
-(2, 'john ', 'meals', 'lecturer', '2.PNG', './file/2.PNG', '2020-02-14 16:34:03', '0');
+(2, 'john ', 'meals', 'lecturer', '2.PNG', './file/2.PNG', '2020-02-14 16:34:03', '0'),
+(3, 'General', 'Zunday', 'lecturer', 'tm-img-03-tn.jpg', './file/tm-img-03-tn.jpg', '2020-02-19 02:57:06', '0');
 
 -- --------------------------------------------------------
 
@@ -88,7 +89,7 @@ CREATE TABLE IF NOT EXISTS `ratings` (
   `date` timestamp NOT NULL,
   `status` varchar(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `ratings`
@@ -97,7 +98,10 @@ CREATE TABLE IF NOT EXISTS `ratings` (
 INSERT INTO `ratings` (`id`, `rater`, `lecturer_id`, `rates`, `date`, `status`) VALUES
 (1, 'not disclosed', 1, '3', '2020-02-14 16:14:46', '0'),
 (2, 'ali', 1, '1', '2020-02-14 17:34:42', '0'),
-(3, 'ali', 1, '3', '2020-02-14 17:35:47', '0');
+(3, 'ali', 1, '3', '2020-02-14 17:35:47', '0'),
+(4, 'ali', 3, '3', '2020-02-19 02:57:36', '0'),
+(5, 'ali', 1, '4', '2020-02-19 02:59:24', '0'),
+(6, 'ali', 3, '2', '2020-02-19 02:59:40', '0');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
