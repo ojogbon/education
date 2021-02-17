@@ -6,12 +6,12 @@ $user = "root";
  $database ="rate";
 $mycon=mysqli_connect($host,$user,$password);
 if (!$mycon){
-    echo 'error'.  die();
+    echo 'error';
 }  else {
    // echo 'alert...';
     $getdb = mysqli_select_db($mycon,$database);
     if (!$getdb){
-    echo 'error'.  die();
+    echo 'error';
 
 } else {
     // echo 'alert...oooo';
